@@ -18,3 +18,12 @@ your `jupyterhub_config.py`:
 ```
 c.JupyterHub.authenticator_class = 'dummyauthenticator.DummyAuthenticator'
 ```
+
+### Configuration ###
+
+If you want, you can set a static global password for all users. This provides
+slightly more security, but not that much more than having no password set :)
+
+```
+c.DummyAuthenticator.password = "your strong password"
+```
